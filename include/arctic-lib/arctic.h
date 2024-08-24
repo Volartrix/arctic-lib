@@ -2,6 +2,7 @@
 #define __ARCTIC_ARCTIC_H__
 
 #include "func-blueprints.h"
+#include "arctic-io.h"
 
 extern str_output_func out_func;
 
