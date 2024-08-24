@@ -1,0 +1,13 @@
+#ifndef __ARCTIC_CODES_H__
+#define __ARCTIC_CODES_H__
+
+#define ARCTIC_OK 0
+#define ARCTIC_ERR -1
+#define ARCTIC_ERR_NULL_POINTER -2
+#define ARCTIC_ERR_INVALID_ARGUMENT -3
+#define ARCTIC_ERR_INVALID_STATE -4
+#define ARCTIC_ERR_OUT_OF_MEMORY -5
+#define ARCTIC_ERR_OUT_OF_BOUNDS -6
+
+
+#endif // __ARCTIC_CODES_H__
