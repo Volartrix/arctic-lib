@@ -1,10 +1,10 @@
 #ifndef __ARCTIC_IO_H__
 #define __ARCTIC_IO_H__
 
+#include "arctic.h"
 
 extern str_output_func out_func;
 
-#include "arctic.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 // \author (c) Marco Paland (info@paland.com)
@@ -42,6 +42,7 @@ extern str_output_func out_func;
 
 #include <stdarg.h>
 #include <stddef.h>
+#include "func-blueprints.h"
 
 
 #ifdef __cplusplus

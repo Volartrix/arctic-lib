@@ -14,7 +14,9 @@ void charout(const char *c) {
 
 int main(int argc, char** argv) {
     charout("A");
-    arctic_init(charout);
+    if (arctic_init(charout, "Test logger") != ARCTIC_OK) {
+        return 1;
+    }
 
     char *str = "Hello, world!";
     char str2[64];
@@ -23,6 +25,10 @@ int main(int argc, char** argv) {
     aprintf("Original string: %s\n", str);
     aprintf("Copied string: %s\n", str2);
     
+    arctic_info("Hello, world! %s\n", "This is a test");
+    arctic_warn("Hello, world! %s\n", "This is a test");
+    arctic_error("Hello, world! %s\n", "This is a test");
+
 
     aprintf("Hello, world! %s\n", "This is a test");
 
